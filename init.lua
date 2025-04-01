@@ -35,6 +35,9 @@ require("lazy-lsp").setup {
 }
 
 
+require("autocommands")
+
+
 --------------- Custom Configs ---------------
 
 -- Indent using 2 spaces
