@@ -3,11 +3,13 @@ require("config.lazy")
 require("lazy-lsp").setup {
   -- By default all available servers are set up. Exclude unwanted or misbehaving servers.
   excluded_servers = {
-    "ccls", "zk",
+    "marksman", "ltex", "ccls", "zk",
   },
   -- Alternatively specify preferred servers for a filetype (others will be ignored).
   preferred_servers = {
     python = { "pyright" },
+    cpp = { "clangd" },
+    c = { "clangd" },
   },
   prefer_local = true, -- Prefer locally installed servers over nix-shell
   -- Default config passed to all servers to specify on_attach callback and other options.
