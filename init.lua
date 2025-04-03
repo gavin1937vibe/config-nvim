@@ -43,13 +43,15 @@ require("autocommands")
 --------------- Custom Configs ---------------
 
 -- Indent using 2 spaces
-vim.opt.tabstop = 8 -- Always 8 (see :h tabstop)
+vim.opt.tabstop = 4 -- Always 4 (see :h tabstop)
 vim.opt.softtabstop = 2 -- What you expecting
 vim.opt.shiftwidth = 2 -- What you expecting
+vim.opt.expandtab = true -- Always use space
 
 -- Show line number
 vim.opt.number = true
 -- vim.opt.relativenumber = true -- relative line number around cursor
+
 
 
 
