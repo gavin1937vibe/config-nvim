@@ -3,7 +3,7 @@ require("config.lazy")
 require("lazy-lsp").setup {
   -- By default all available servers are set up. Exclude unwanted or misbehaving servers.
   excluded_servers = {
-    "marksman", "ltex", "ccls", "zk",
+    "marksman", "ltex", "ccls", "sourcekit", "zk",
   },
   -- Alternatively specify preferred servers for a filetype (others will be ignored).
   preferred_servers = {
@@ -33,8 +33,35 @@ require("lazy-lsp").setup {
         },
       },
     },
+
+    ccls = {
+      cache = {
+        directory = "/tmp/.ccls-cache";
+      };
+    },
+
+-- try to disable following lsp, but don't work
+--    marksman = { manager = nil },
+--    markdown = { manager = nil },
+--    ltex = { manager = nil },
+--    ltex_ls = { manager = nil },
+--    ltexls = { manager = nil },
+--    ccls = { manager = nil },
   },
 }
+
+-- try to disable following lsp, but don't work
+-- local lspconfig = require('lspconfig')
+-- -- Disable ccls if it was previously set up
+-- if lspconfig.ccls then
+--   lspconfig.ccls.manager = nil
+-- end
+-- if lspconfig.sourcekit then
+--   lspconfig.sourcekit.manager = nil
+-- end
+-- if lspconfig.marksman then
+--   lspconfig.marksman.manager = nil
+-- end
 
 
 require("autocommands")
@@ -43,16 +70,11 @@ require("autocommands")
 --------------- Custom Configs ---------------
 
 -- Indent using 2 spaces
-vim.opt.tabstop = 4 -- Always 4 (see :h tabstop)
-vim.opt.softtabstop = 2 -- What you expecting
-vim.opt.shiftwidth = 2 -- What you expecting
+vim.opt.tabstop = 4      -- Always 4 (see :h tabstop)
+vim.opt.softtabstop = 2  -- What you expecting
+vim.opt.shiftwidth = 2   -- What you expecting
 vim.opt.expandtab = true -- Always use space
 
 -- Show line number
 vim.opt.number = true
 -- vim.opt.relativenumber = true -- relative line number around cursor
-
-
-
-
-
