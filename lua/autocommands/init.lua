@@ -1,3 +1,4 @@
+-- auto jump to last edited line when open a file
 vim.api.nvim_create_autocmd('BufRead', {
   callback = function(opts)
     vim.api.nvim_create_autocmd('BufWinEnter', {
