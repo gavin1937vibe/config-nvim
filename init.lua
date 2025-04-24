@@ -114,3 +114,9 @@ vim.opt.expandtab = true -- Always use space
 -- Show line number
 vim.opt.number = true
 -- vim.opt.relativenumber = true -- relative line number around cursor
+
+-- Enable copy selected content to clipboard outside of nvim
+--  shortcut: "+Y
+vim.api.nvim_set_option("clipboard", "unnamed")
+
+
