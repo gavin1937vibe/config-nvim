@@ -119,4 +119,9 @@ vim.opt.number = true
 --  shortcut: "+Y
 vim.api.nvim_set_option("clipboard", "unnamed")
 
+-- shortcut follow links in neovim: gx
+
+
+
+
 
