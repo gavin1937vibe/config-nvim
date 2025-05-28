@@ -123,6 +123,7 @@ vim.api.nvim_set_option("clipboard", "unnamed")
 
 
 -- :terminal, :term mode Keymaps
+-- press <i> to insert command
 -- exit mode via <ESC> & <Ctrl-[>
 -- just like how to exit insert mode in normal file
 vim.api.nvim_set_keymap("t", "<ESC>", "<C-\\><C-n>", {noremap = false})
@@ -133,8 +134,13 @@ vim.api.nvim_set_keymap("t", "<C-[>", "<C-\\><C-n>", {noremap = false})
 
 -- :split, :sp window in NeoVim
 -- can be invoke via command or keyboard shortcuts:
---    * split vertical:    <Ctrl-W>+<S>
---    * split horizontal:  <Ctrl-W>+<V>
+--    * split vertical:    <Ctrl-W>+<s>
+--    * split horizontal:  <Ctrl-W>+<v>
+--    * move across windows, just like how to move cursor:
+--        <Ctrl-W>+<h>
+--        <Ctrl-W>+<j>
+--        <Ctrl-W>+<k>
+--        <Ctrl-W>+<l>
 
 
 
