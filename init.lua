@@ -122,6 +122,22 @@ vim.api.nvim_set_option("clipboard", "unnamed")
 -- shortcut follow links in neovim: gx
 
 
+-- :terminal, :term mode Keymaps
+-- exit mode via <ESC> & <Ctrl-[>
+-- just like how to exit insert mode in normal file
+vim.api.nvim_set_keymap("t", "<ESC>", "<C-\\><C-n>", {noremap = false})
+vim.api.nvim_set_keymap("t", "<C-[>", "<C-\\><C-n>", {noremap = false})
+-- Go back to editer after terminal session ends (via "exit" command)
+-- Recommand to use :term mode with :split mode
+
+
+-- :split, :sp window in NeoVim
+-- can be invoke via command or keyboard shortcuts:
+--    * split vertical:    <Ctrl-W>+<S>
+--    * split horizontal:  <Ctrl-W>+<V>
+
+
+
 
 
 
