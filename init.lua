@@ -147,8 +147,17 @@ vim.api.nvim_set_keymap("t", "<C-[>", "<C-\\><C-n>", {noremap = false})
 --        <Ctrl-W>+<l>
 
 
--- :tabnew, :tabnew filename, open file in a new tab
+-- :new, :vne split a new empty buffer in split window
+-- :new split vertically
+-- :vne split horizontally
+
+
+-- :tabnew, :tabnew filename, :tabe open file in a new tab
 -- can switch tab via <g>+<t> forward or <g>+<T> backword
+-- :tabnew open a new empty buffer in new tab
+-- :tabnew filename open the specified file in new tab
+-- :tabf filename open the specified file in new tab
+
 
 
 
