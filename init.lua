@@ -122,6 +122,10 @@ vim.api.nvim_set_option("clipboard", "unnamed")
 -- shortcut follow links in neovim: gx
 
 
+-- toggle modifiable mode
+-- via command line argument, vim -M filename to turn on
+-- via vim command, :set ma for turn on and :set noma for turn off
+
 -- :terminal, :term mode Keymaps
 -- press <i> to insert command
 -- exit mode via <ESC> & <Ctrl-[>
@@ -134,14 +138,17 @@ vim.api.nvim_set_keymap("t", "<C-[>", "<C-\\><C-n>", {noremap = false})
 
 -- :split, :sp window in NeoVim
 -- can be invoke via command or keyboard shortcuts:
---    * split vertical:    <Ctrl-W>+<s>
---    * split horizontal:  <Ctrl-W>+<v>
+--    * split vertical:    <Ctrl-W>+<s>, or :sp, :sp filename
+--    * split horizontal:  <Ctrl-W>+<v>, or :vs, :vs filename
 --    * move across windows, just like how to move cursor:
 --        <Ctrl-W>+<h>
 --        <Ctrl-W>+<j>
 --        <Ctrl-W>+<k>
 --        <Ctrl-W>+<l>
 
+
+-- :tabnew, :tabnew filename, open file in a new tab
+-- can switch tab via <g>+<t> forward or <g>+<T> backword
 
 
 
