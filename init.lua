@@ -120,6 +120,7 @@ vim.opt.number = true
 vim.api.nvim_set_option("clipboard", "unnamed")
 
 -- shortcut follow links in neovim: gx
+-- shortcut (un)comment line(s): select line(s) with visual line mode, then gc
 
 
 -- toggle modifiable mode
