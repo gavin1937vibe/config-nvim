@@ -160,6 +160,9 @@ vim.api.nvim_set_keymap("t", "<C-[>", "<C-\\><C-n>", {noremap = false})
 -- :tabf filename open the specified file in new tab
 
 
+-- :set fileencoding=utf-8, this will set file encoding to utf-8 (no BOM)
+--    * neovim uses utf-8 by default, so this is unnecessary
+-- :set bomb, this will set file encoding with BOM
 
 
 
