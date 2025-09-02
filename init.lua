@@ -73,8 +73,8 @@ require("autocommands")
 -- Keymaps:
 --  zc: collapse one block
 --  zo: open one block
---  zR: collapse all blocks
---  zM: open all blocks
+--  zM: collapse all blocks
+--  zR: open all blocks
 vim.o.foldcolumn = '1' -- '0' is not bad
 vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
 vim.o.foldlevelstart = 99
