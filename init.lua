@@ -95,6 +95,18 @@ vim.api.nvim_set_keymap("t", "<C-[>", "<C-\\><C-n>", {noremap = false})
 -- :tabf filename open the specified file in new tab
 
 
+-- insert sequence number:
+-- method 1: for prepend/append sequence to existing text
+--   1. enter visual block mode <C-v>
+--   2. select lines
+--   3. insert a starting number. <I>, then enter 1, then <Esc>
+--   4. re-select the block from 2nd line to the end
+--   5. <g> + <C-a> create sequence
+-- method 2: for create sequence to empty lines
+--   1. move cursor to the beginning of sequence
+--   2. :put =range(1, 10)
+--   3. also try this. :put =map(range(1, 100), 'printf("%03d", v:val)')
+
 
 
 
